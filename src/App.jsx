@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import WorldMap from './components/WorldMap';
 import CountryTable from './components/CountryTable';
 import QuizInput from './components/QuizInput';
@@ -161,6 +162,7 @@ export default function App() {
       <footer className="app-footer">
         A JetPunk-style quiz · 197 countries · built with React
       </footer>
+      <Analytics />
     </div>
   );
 }
